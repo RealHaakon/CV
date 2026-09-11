@@ -1,0 +1,128 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage[
+  top=1.4cm,
+  bottom=1.4cm,
+  left=1.4cm,
+  right=1.4cm
+]{geometry}
+
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{multicol}
+
+\definecolor{accent}{HTML}{1a5276}
+\definecolor{dark}{HTML}{222222}
+\definecolor{mid}{HTML}{555555}
+\definecolor{line}{HTML}{cccccc}
+\definecolor{sidebarbg}{HTML}{f5f5f5}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  urlcolor=accent,
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}
+  {\large\bfseries\color{accent}}
+  {}{0em}
+  {}
+  [\vspace{-1ex}{\color{line}\rule{\textwidth}{0.4pt}}]
+
+\titlespacing*{\section}{0pt}{0.8ex}{0.4ex}
+
+\setlist[itemize]{
+  nosep,
+  leftmargin=1.2em,
+  topsep=1pt,
+  label=\textcolor{accent}{\textbullet},
+  after=\vspace{-0.4ex}
+}
+
+\begin{document}
+
+% ===================================================================
+%  HEADER
+% ===================================================================
+\begin{center}
+  {\LARGE\bfseries\color{dark} Håkon Bekken}\\[0.4em]
+  {\small\color{mid} \href{mailto:hakon.bekken@nmbu.no}{hakon.bekken@nmbu.no} \;\textbar\; +47~472~36~770 \;\textbar\; \href{https://github.com/realhaakon}{GitHub}}
+\end{center}
+
+\vspace{0.3em}
+
+% ===================================================================
+%  EDUCATION
+% ===================================================================
+\section{EDUCATION}
+
+\noindent\textbf{Applied Robotics (Anvendt robotikk)} \hfill {\small\color{mid} 2024 -- 2029}\\
+{\small Norwegian University of Life Sciences (NMBU), Ås}\\[0.5ex]
+
+\noindent\textbf{Cyber Technician} \hfill {\small\color{mid} 2019 -- 2020}\\
+{\small Norwegian Armed Forces}\\[0.5ex]
+
+\noindent\textbf{Craft Certificate in ICT Service (Fagbrev)} \hfill {\small\color{mid} }\\[0.3ex]
+
+\noindent{\small \textbf{Driver's license:} Class A (motorcycle), Class B (car)}
+
+% ===================================================================
+%  TECHNICAL SKILLS
+% ===================================================================
+\section{TECHNICAL SKILLS}
+
+\noindent
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\small}l X}
+  CAD           & Autodesk Fusion 360, Autodesk Inventor \\
+  Programming   & Python \\
+  Networking    & Cisco network systems \\
+  SysAdmin      & Windows \& Linux server administration \\
+  Infrastructure & Fiber optics, server environments \\
+  Communications & Radio communication systems (HF, VHF, UHF, SHF, satellite) \\
+  PCB Design     & Learning Altium Designer \\
+\end{tabularx}
+
+% ===================================================================
+%  WORK EXPERIENCE
+% ===================================================================
+\section{WORK EXPERIENCE}
+
+\noindent\textbf{FSP Specialist} \hfill {\small\color{mid} 2020 -- 2024}\\
+{\small Norwegian Cyber Defence (Cyberforsvaret)}\\[0.5ex]
+
+\noindent\textbf{Conscript} \hfill {\small\color{mid} 2018 -- 2019}\\
+{\small Norwegian Armed Forces}\\[0.5ex]
+
+\noindent\textbf{Auxiliary Nurse (Sommerjobb/vikar)} \hfill {\small\color{mid} 2017 -- 2020}\\
+{\small Jevnaker omsorgs- og rehabiliteringssenter}
+
+% ===================================================================
+%  PROJECTS
+% ===================================================================
+\section{PROJECTS (ONGOING, VIA EIK LAB)}
+
+\noindent\textbf{Clench} -- Embedded sensor integration in a mouthguard (wearable sensor device).\\[0.3ex]
+
+\noindent\textbf{Patronus} -- 3D modelling and design for an anti-drone system, in collaboration with Kongsberg Defence \& Aerospace.
+
+% ===================================================================
+%  LEADERSHIP & EXTRACURRICULAR
+% ===================================================================
+\section{LEADERSHIP \& EXTRACURRICULAR}
+
+\noindent\textbf{Administration Manager} -- Robotnik (Student Association)\\[0.3ex]
+
+\noindent\textbf{Mentor} -- Eik Lab
+
+\end{document}
