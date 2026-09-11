@@ -1,40 +1,43 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Håkon Bekken
+description: Håkon Bekken — Applied Robotics student at NMBU, with a background in cyber defence and ICT.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+  tagline: Official Home Page
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import BhList from '../../components/BhList.astro';
+import { Aside } from '@astrojs/starlight/components';
+import portrait from '../../assets/haakon4k.jpg';
 
-## Next steps
+<img
+  src={portrait.src}
+  alt="Portrait of Håkon Bekken"
+  style="display:block;margin:0 auto 1.5rem;width:240px;height:240px;object-fit:cover;border-radius:9999px;"
+/>
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
-</CardGrid>
+<BhList
+  sections={[
+    {
+      heading: 'Links',
+      items: [
+        { label: 'CV / Resume', href: '/cv/' },
+        { label: 'Projects', href: '/projects/' },
+        { label: 'GitHub', href: 'https://github.com/realhaakon', external: true },
+      ],
+    },
+  ]}
+/>
+
+FOR A FREE LOOK AT MY WORK, VISIT GITHUB.COM/REALHAAKON, OR WRITE ME AN EMAIL AT HAKON.BEKKEN@NMBU.NO
+
+If you have any comments about this web page, you may write to the address shown above. Due to the
+demands of coursework and the limited number of personnel in my office, I am unable to provide a
+direct response.
+
+<Aside type="note" title="Legal disclaimer">
+  This is the personal site of Håkon Bekken and is not affiliated with any of the companies
+  mentioned. All trademarks remain the property of their respective owners.
+</Aside>
+
+Copyright © 2026 Håkon Bekken

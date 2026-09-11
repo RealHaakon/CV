@@ -6,19 +6,20 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'Håkon Bekken',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/realhaakon' }],
 			sidebar: [
+				{ label: 'Home', link: '/' },
+				{ label: 'CV', slug: 'cv' },
 				{
-					label: 'Guides',
+					label: 'Projects',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Overview', slug: 'projects' },
+						{ label: 'MyAmazingESP32', slug: 'projects/my-amazing-esp32' },
+						{ label: 'MPU6050 Breakout', slug: 'projects/mpu6050-breakout' },
+						{ label: 'Clench', slug: 'projects/clench' },
+						{ label: 'Patronus', slug: 'projects/patronus' },
 					],
-				},
-				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
 				},
 			],
 		}),

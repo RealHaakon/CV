@@ -2,9 +2,12 @@
 .DS_Store
 .vscode/
 
-# --- direnv / environment ---
+# --- direnv / environment / nix ---
 .direnv
 .env
+.envrc
+flake.nix
+flake.lock
 
 # --- Dependencies ---
 node_modules/
@@ -23,3 +26,37 @@ dist/
 *~
 *.bak
 *.orig
+
+# --- LaTeX / CV documents ---
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.nav
+*.out
+*.pdf
+*.run.xml
+*.snm
+*.synctex.gz
+*.synctex(busy)
+*.toc
+*.vrb
+*.xdv
+CV.tex
+
+# --- Raw asset sources (originals, not used by the site) ---
+CVpicture/
+CVPicture.jpg
+ClenchPicture/
+ESP32/
+MPU6050/
+Patronus/
+images/
+logos/
+bibliography/
+
+# --- Unused starter asset ---
+src/assets/houston.webp

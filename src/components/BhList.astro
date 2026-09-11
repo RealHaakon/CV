@@ -1,0 +1,111 @@
+---
+/**
+ * A plain, Berkshire-Hathaway-style ledger of links: one bordered box,
+ * small-caps group headings, and rows of hyperlinks with optional notes.
+ */
+interface LinkItem {
+	label: string;
+	href: string;
+	note?: string;
+	external?: boolean;
+}
+
+interface Section {
+	heading: string;
+	items: LinkItem[];
+}
+
+interface Props {
+	sections: Section[];
+}
+
+const { sections } = Astro.props;
+---
+
+<div class="bh-list">
+	{
+		sections.map((section) => (
+			<section class="bh-group">
+				<h2 class="bh-group__heading">{section.heading}</h2>
+				<ul class="bh-group__rows">
+					{section.items.map((item) => (
+						<li class="bh-row">
+							<a
+								class="bh-row__link"
+								href={item.href}
+								target={item.external ? '_blank' : undefined}
+								rel={item.external ? 'noreferrer' : undefined}
+							>
+								{item.label}
+							</a>
+							{item.note && <span class="bh-row__note">{item.note}</span>}
+						</li>
+					))}
+				</ul>
+			</section>
+		))
+	}
+</div>
+
+<style>
+	.bh-list {
+		max-width: 42rem;
+		margin-inline: auto;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.35rem;
+		padding: 1.25rem 1.5rem;
+		margin-block: 1.5rem;
+	}
+	.bh-group + .bh-group {
+		margin-top: 1rem;
+	}
+	.bh-group__heading {
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--sl-color-text);
+		margin: 0 0 0.25rem;
+		padding-bottom: 0.3rem;
+		border-bottom: 1px solid var(--sl-color-gray-6);
+	}
+	.bh-row {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.bh-row + .bh-row {
+		border-top: 1px solid var(--sl-color-gray-6);
+	}
+	.bh-group__rows {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	.bh-row {
+		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
+		gap: 1rem;
+		padding: 0.4rem 0;
+	}
+	.bh-row__link {
+		color: var(--sl-color-text-accent);
+		text-decoration: underline;
+	}
+	.bh-row__link:hover {
+		text-decoration: underline;
+		text-decoration-style: double;
+	}
+	.bh-row__note {
+		color: var(--sl-color-gray-3);
+		font-size: 0.8rem;
+		white-space: nowrap;
+	}
+	@media (max-width: 640px) {
+		.bh-row {
+			flex-direction: column;
+			gap: 0.1rem;
+		}
+	}
+</style>
