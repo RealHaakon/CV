@@ -36,7 +36,7 @@ network operations, and first steps into hardware design and PCB layout.
 ### Applied Robotics
 *Norwegian University of Life Sciences (NMBU), Ås — 2024 -- 2029*
 
-Bachelor's programme in Applied Robotics (Anvendt robotikk).
+Master's programme in Civil Engineering, specializing in Applied Robotics (Anvendt robotikk).
 
 ### Cyber Technician
 *Norwegian Armed Forces — 2019 -- 2020*
