@@ -14,7 +14,7 @@ network operations, and first steps into hardware design and PCB layout.
 
 ## Contact Information
 
-- **Email:** [hakon.bekken@nmbu.no](mailto:hakon.bekken@nmbu.no)
+- **Email:** [haakon.bekken@hotmail.com](mailto:haakon.bekken@hotmail.com)
 - **Phone:** +47 472 36 770
 - **Address:** Nedre Pentagonvei 26
 - **GitHub:** [github.com/realhaakon](https://github.com/realhaakon)

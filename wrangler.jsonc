@@ -1,13 +1,7 @@
 {
-	"compatibility_date": "2026-05-06",
-	"compatibility_flags": ["global_fetch_strictly_public", "nodejs_compat"],
 	"name": "cv",
-	"main": "@astrojs/cloudflare/entrypoints/server",
+	"compatibility_date": "2026-09-11",
 	"assets": {
-		"directory": "./dist",
-		"binding": "ASSETS"
-	},
-	"observability": {
-		"enabled": true
+		"directory": "./dist"
 	}
 }
