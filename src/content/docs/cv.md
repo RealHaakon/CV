@@ -67,3 +67,4 @@ Class A (motorcycle) and Class B (car).
 
 - **Administration Manager** -- Robotnik (Student Association)
 - **Mentor** -- Eik Lab
+- **Sole Proprietor (ENK)** -- Å Gå Over Bekken Etter Vann
