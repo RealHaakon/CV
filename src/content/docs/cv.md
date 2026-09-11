@@ -63,19 +63,6 @@ Class A (motorcycle) and Class B (car).
 ### Auxiliary Nurse (Summer / Part Time)
 *Jevnaker omsorgs- og rehabiliteringssenter — 2017 -- 2020*
 
-## Projects
-
-See the [Projects](/projects/) section for details.
-
-<CardGrid>
-	<Card title="Clench" icon="brain">
-		Embedded sensor integration in a mouthguard (wearable sensor device).
-	</Card>
-	<Card title="Patronus" icon="shield">
-		3D modelling and design for an anti-drone system, in collaboration with Kongsberg Defence &amp; Aerospace.
-	</Card>
-</CardGrid>
-
 ## Leadership & Extracurricular
 
 - **Administration Manager** -- Robotnik (Student Association)
