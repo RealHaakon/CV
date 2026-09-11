@@ -40,5 +40,4 @@ as it was delivered, in the spirit of full disclosure.
 
 ## Other
 
-- **dating-coach-app** — JavaScript side project.
 - **hms_for_laserkutter** — Fork of the Eik-Lab laser cutter HMS documentation.

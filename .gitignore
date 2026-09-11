@@ -47,6 +47,9 @@ dist/
 *.xdv
 CV.tex
 
+# --- Exception: downloadable CV on the site ---
+!public/CV.pdf
+
 # --- Raw asset sources (originals, not used by the site) ---
 CVpicture/
 CVPicture.jpg
