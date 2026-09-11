@@ -1,16 +1,17 @@
 ---
 title: Clench
-description: Embedded sensor integration in a mouthguard (wearable sensor device).
+description: Smart mouthguard measuring heart rate, SpO2, movement, and head trauma for athletes.
 ---
 
 # Clench
 
-Embedded sensor integration in a **mouthguard** — a wearable sensor device.
+**Smart mouthguard** — a wearable sensor device for athlete safety.
 
 ## About
 
-Ongoing project at the **Eik Lab** at NMBU, integrating sensors into a mouthguard to measure
-wear and bite behavior. Combines embedded firmware with physical integration into the device.
+Ongoing project at the **Eik Lab** at NMBU, developing a smart mouthguard that can measure
+**heart rate (HR)**, **blood oxygen saturation (SpO2)**, **movement**, and **head trauma** for athletes.
+Combines embedded firmware with physical integration into the device.
 
 ## Gallery
 

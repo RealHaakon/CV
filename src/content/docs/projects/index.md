@@ -32,6 +32,7 @@ as it was delivered, in the spirit of full disclosure.
 
 ## Course Work
 
+- **INF202 Oil Spill Simulation** — Bay City oil spill simulation (Python). [GitHub](https://github.com/Suilerac/INF202---Group-18)
 - **TEL200V26** — Course TEL200: collaboration with Andreas Brustad and Johannes Standal.
 - **TIP150** — TeX deliverables.
 - **TEL100** — Introductory embedded work in C++.
@@ -40,4 +41,5 @@ as it was delivered, in the spirit of full disclosure.
 
 ## Other
 
+- **Fusion 360 Learning Playlist** — Curated YouTube playlist for learning Autodesk Fusion 360. [Watch](https://www.youtube.com/watch?v=rbZhX7CLQlY&list=PLWqLPUffkEPRuUrz8jso7uJ9GSjJQDhwO)
 - **hms_for_laserkutter** — Fork of the Eik-Lab laser cutter HMS documentation. [Live site](https://hms-for-laserkutter.haakon-bekken.workers.dev/)
