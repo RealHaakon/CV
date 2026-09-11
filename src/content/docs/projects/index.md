@@ -40,4 +40,4 @@ as it was delivered, in the spirit of full disclosure.
 
 ## Other
 
-- **hms_for_laserkutter** — Fork of the Eik-Lab laser cutter HMS documentation.
+- **hms_for_laserkutter** — Fork of the Eik-Lab laser cutter HMS documentation. [Live site](https://hms-for-laserkutter.haakon-bekken.workers.dev/)
