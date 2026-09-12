@@ -68,3 +68,4 @@ Class A (motorcycle) and Class B (car).
 - **Administration Manager** -- Robotnik (Student Association)
 - **Mentor** -- Eik Lab
 - **Sole Proprietor (ENK)** -- Å Gå Over Bekken Etter Vann
+- **Teaching Assistant** -- [TIP100 Industriell innovasjon og teknologi](https://www.nmbu.no/emne/TIP100)
