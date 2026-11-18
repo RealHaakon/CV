@@ -1,0 +1,44 @@
+---
+/**
+ * A self-hosted looping video clip with an optional caption. Used for demos
+ * that used to be animated GIFs, which are far heavier to download.
+ */
+interface Props {
+	src: string;
+	caption?: string;
+	poster?: string;
+	/** Maximum display width of the player. */
+	maxWidth?: string;
+}
+
+const { src, caption, poster, maxWidth = '36rem' } = Astro.props;
+---
+
+<figure class="video" style={`--video-max-width: ${maxWidth}`}>
+	<video controls muted loop autoplay playsinline preload="metadata" poster={poster}>
+		<source src={src} type="video/mp4" />
+	</video>
+	{caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+	.video {
+		max-width: var(--video-max-width);
+		margin-inline: auto;
+		margin-block: 1.5rem;
+	}
+	.video video {
+		display: block;
+		width: 100%;
+		height: auto;
+		border-radius: 0.35rem;
+		background: var(--sl-color-black);
+		box-shadow: 0 0 0 1px var(--sl-color-gray-5);
+	}
+	.video figcaption {
+		margin-top: 0.4rem;
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+		text-align: center;
+	}
+</style>

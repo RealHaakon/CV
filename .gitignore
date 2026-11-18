@@ -49,6 +49,7 @@ CV.tex
 
 # --- Exception: downloadable CV on the site ---
 !public/CV.pdf
+!public/CV-nb.pdf
 
 # --- Raw asset sources (originals, not used by the site) ---
 CVpicture/

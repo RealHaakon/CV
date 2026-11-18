@@ -1,0 +1,47 @@
+---
+/**
+ * A responsive wrapper around a YouTube embed using the privacy-friendly
+ * youtube-nocookie.com domain.
+ */
+interface Props {
+	id: string;
+	title: string;
+	caption?: string;
+	maxWidth?: string;
+}
+
+const { id, title, caption, maxWidth = '36rem' } = Astro.props;
+---
+
+<figure class="video-embed" style={`--embed-max-width: ${maxWidth}`}>
+	<iframe
+		src={`https://www.youtube-nocookie.com/embed/${id}`}
+		title={title}
+		loading="lazy"
+		allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+		allowfullscreen
+	></iframe>
+	{caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<style>
+	.video-embed {
+		max-width: var(--embed-max-width);
+		margin-inline: auto;
+		margin-block: 1.5rem;
+	}
+	.video-embed iframe {
+		display: block;
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		border: 0;
+		border-radius: 0.35rem;
+		box-shadow: 0 0 0 1px var(--sl-color-gray-5);
+	}
+	.video-embed figcaption {
+		margin-top: 0.4rem;
+		font-size: var(--sl-text-xs);
+		color: var(--sl-color-gray-3);
+		text-align: center;
+	}
+</style>

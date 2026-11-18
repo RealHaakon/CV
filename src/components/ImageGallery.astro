@@ -1,0 +1,85 @@
+---
+/**
+ * A responsive, masonry-style photo gallery. Each image links to the full-size
+ * original so the page itself can stay lightweight.
+ */
+import { Image } from 'astro:assets';
+
+interface GalleryImage {
+	src: ImageMetadata;
+	alt: string;
+	caption?: string;
+}
+
+interface Props {
+	images: GalleryImage[];
+}
+
+const { images } = Astro.props;
+---
+
+<div class="gallery">
+	{
+		images.map((image) => (
+			<figure class="gallery__item">
+				<a href={image.src.src} target="_blank" rel="noreferrer">
+					<Image
+						src={image.src}
+						alt={image.alt}
+						widths={[360, 720]}
+						sizes="(max-width: 50rem) 45vw, 18rem"
+						loading="lazy"
+						decoding="async"
+					/>
+				</a>
+				{image.caption && <figcaption>{image.caption}</figcaption>}
+			</figure>
+		))
+	}
+</div>
+
+<style>
+	.gallery {
+		column-count: 3;
+		column-gap: 0.9rem;
+		margin-block: 1.5rem;
+	}
+	.gallery__item {
+		break-inside: avoid;
+		margin: 0 0 0.9rem;
+	}
+	.gallery__item a {
+		display: block;
+		border-radius: 0.35rem;
+		overflow: hidden;
+		box-shadow: 0 0 0 1px var(--sl-color-gray-5);
+	}
+	.gallery__item a:hover {
+		box-shadow: 0 0 0 2px var(--sl-color-text-accent);
+	}
+	.gallery__item :global(img) {
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: transform 150ms ease-in-out;
+	}
+	.gallery__item a:hover :global(img) {
+		transform: scale(1.02);
+	}
+	.gallery__item figcaption {
+		margin-top: 0.35rem;
+		font-size: var(--sl-text-xs);
+		line-height: 1.4;
+		color: var(--sl-color-gray-3);
+	}
+	@media (max-width: 50rem) {
+		.gallery {
+			column-count: 2;
+		}
+	}
+	@media (max-width: 30rem) {
+		.gallery {
+			column-count: 1;
+		}
+	}
+</style>

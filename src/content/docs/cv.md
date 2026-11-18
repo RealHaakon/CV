@@ -18,6 +18,7 @@ network operations, and first steps into hardware design and PCB layout.
 - **Phone:** +47 472 36 770
 - **Address:** Nedre Pentagonvei 26
 - **GitHub:** [github.com/realhaakon](https://github.com/realhaakon)
+- **Download:** [CV (PDF)](/CV.pdf) &middot; [CV norsk (PDF)](/CV-nb.pdf)
 
 ## Technical Skills
 
@@ -28,15 +29,15 @@ network operations, and first steps into hardware design and PCB layout.
 | Data Network        | Cisco network systems                                                |
 | SysAdmin            | Windows & Linux server administration                                |
 | Infrastructure      | Fiber optics, server environments                                    |
-| Communications      | Radio communication systems (HF, VHF, UHF, SHF, satellite)           |
+| RF Equipment        | Hands-on experience with military radios (HF–SHF) and SATCOM         |
 | PCB Design          | Basic understanding of Altium Designer                               |
 
 ## Education
 
-### Applied Robotics
+### Applied Robotics (Robot design)
 *Norwegian University of Life Sciences (NMBU), Ås — 2024 -- 2029*
 
-Master's programme in Civil Engineering, specializing in Applied Robotics (Anvendt robotikk).
+Master's programme in Civil Engineering, specializing in Applied Robotics (Robot design).
 
 ### Cyber Technician
 *Norwegian Armed Forces — 2019 -- 2020*
@@ -65,7 +66,7 @@ Class A (motorcycle) and Class B (car).
 
 ## Leadership & Extracurricular
 
-- **Administration Manager** -- Robotnik (Student Association)
+- **Administration Manager** -- Robotnik (Student Association), 2025 -- 2027
 - **Mentor** -- Eik Lab
 - **Sole Proprietor (ENK)** -- Å Gå Over Bekken Etter Vann
 - **Teaching Assistant** -- [TIP100 Industriell innovasjon og teknologi](https://www.nmbu.no/emne/TIP100)

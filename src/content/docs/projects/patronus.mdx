@@ -1,0 +1,78 @@
+---
+title: Patronus
+description: 3D modelling and design for an anti-drone system, in collaboration with Kongsberg Defence & Aerospace.
+---
+
+import ImageGallery from '../../../components/ImageGallery.astro';
+import VideoPlayer from '../../../components/VideoPlayer.astro';
+import YouTubeEmbed from '../../../components/YouTubeEmbed.astro';
+import sensorModule from '../../../assets/patronus/SensorModule.jpg';
+import laserTag from '../../../assets/patronus/LaserTag.jpg';
+import earlyAssembly from '../../../assets/patronus/early-assembly.jpg';
+import finishedOne from '../../../assets/patronus/finished-1.jpg';
+import finishedTwo from '../../../assets/patronus/finished-2.jpg';
+
+# Patronus
+
+**3D modelling and design** for an anti-drone system, in collaboration with
+**Kongsberg Defence &amp; Aerospace**.
+
+## About
+
+Ongoing project at the **Eik Lab** at NMBU. Focuses on the mechanical design and 3D modelling
+of components for a drone-countermeasure system.
+
+In November 2026 the system was demonstrated live. It was a great success, and I am excited to
+continue the work next semester.
+
+## Demo
+
+<YouTubeEmbed
+  id="cnX4EmxklSI"
+  title="Patronus demo"
+  caption="Patronus in action — a live demonstration of the system."
+/>
+
+## Gallery
+
+<VideoPlayer
+  src="/media/patronus-3d-view.mp4"
+  caption="3D view of the Patronus design."
+  maxWidth="26rem"
+/>
+
+<ImageGallery
+  images={[
+    {
+      src: earlyAssembly,
+      alt: 'Early Patronus assembly',
+      caption: 'Early assembly of the system.',
+    },
+    {
+      src: sensorModule,
+      alt: 'Sensor module',
+      caption: 'The sensor module.',
+    },
+    {
+      src: laserTag,
+      alt: 'Laser tag hardware',
+      caption: 'Laser tag hardware used in testing.',
+    },
+    {
+      src: finishedOne,
+      alt: 'Finished Patronus unit',
+      caption: 'Finished unit.',
+    },
+    {
+      src: finishedTwo,
+      alt: 'Finished Patronus unit from another angle',
+      caption: 'Finished unit, detail view.',
+    },
+  ]}
+/>
+
+## Status
+
+:::note[Status]
+Ongoing development under the Eik Lab. The work continues next semester.
+:::

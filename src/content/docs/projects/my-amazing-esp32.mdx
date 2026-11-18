@@ -1,0 +1,88 @@
+---
+title: MyAmazingESP32
+description: A custom ESP32 development board designed from scratch.
+---
+
+import ImageGallery from '../../../components/ImageGallery.astro';
+import VideoPlayer from '../../../components/VideoPlayer.astro';
+import board from '../../../assets/esp32/board.jpg';
+import front from '../../../assets/esp32/front.jpg';
+import back from '../../../assets/esp32/back.jpg';
+import layoutOne from '../../../assets/esp32/layout-1.jpg';
+import layoutTwo from '../../../assets/esp32/layout-2.jpg';
+import layoutThree from '../../../assets/esp32/layout-3.jpg';
+import layoutFour from '../../../assets/esp32/layout-4.jpg';
+
+# MyAmazingESP32
+
+A custom **ESP32 development board**, designed from scratch and made by me, inspired by
+[Robert Feranec's hardware design course](https://www.youtube.com/watch?v=KWIzhbQaZZk).
+
+- **Repository:** [MyAmazingESP32](https://github.com/realhaakon/MyAmazingESP32)
+- **Updated:** November 18, 2026
+
+## About
+
+This board was built while learning the full hardware design flow: schematic capture,
+PCB layout, and manufacturing files. It is my first complete, standalone development board.
+
+The repository has been updated with the latest revision. I will keep updating it with smaller
+projects going forward, so it doubles as a collection of board designs.
+
+## Gallery
+
+<VideoPlayer
+  src="/media/esp32-demo.mp4"
+  caption="The board in operation."
+  maxWidth="20rem"
+/>
+
+<ImageGallery
+  images={[
+    {
+      src: board,
+      alt: 'The assembled MyAmazingESP32 board',
+      caption: 'The assembled board.',
+    },
+    {
+      src: front,
+      alt: 'Front of the ESP32 board',
+      caption: 'PCB, front.',
+    },
+    {
+      src: back,
+      alt: 'Back of the ESP32 board',
+      caption: 'PCB, back.',
+    },
+    {
+      src: layoutOne,
+      alt: 'PCB layout, layer 1',
+      caption: 'PCB layout, layer 1.',
+    },
+    {
+      src: layoutTwo,
+      alt: 'PCB layout, layer 2',
+      caption: 'PCB layout, layer 2.',
+    },
+    {
+      src: layoutThree,
+      alt: 'PCB layout, layer 3',
+      caption: 'PCB layout, layer 3.',
+    },
+    {
+      src: layoutFour,
+      alt: 'PCB layout, layer 4',
+      caption: 'PCB layout, layer 4.',
+    },
+  ]}
+/>
+
+## Files
+
+- [Schematic (PDF)](/media/esp32-schematic.pdf)
+
+## Status
+
+:::note[Status]
+Still learning. Expect revisions as the design matures.
+:::

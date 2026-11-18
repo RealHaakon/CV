@@ -8,7 +8,7 @@ sidebar:
 All repositories are public on [GitHub](https://github.com/realhaakon). Course work is included
 as it was delivered, in the spirit of full disclosure.
 
-## Hardware Projects
+## Projects
 
 <CardGrid>
 	<LinkCard title="MyAmazingESP32" href="/projects/my-amazing-esp32/">
@@ -17,13 +17,8 @@ as it was delivered, in the spirit of full disclosure.
 	<LinkCard title="MPU6050 Breakout" href="/projects/mpu6050-breakout/">
 		My first breakout board using the MPU6050 IMU sensor.
 	</LinkCard>
-</CardGrid>
-
-## Lab Projects (via Eik Lab)
-
-<CardGrid>
 	<LinkCard title="Clench" href="/projects/clench/">
-		Embedded sensor integration in a mouthguard.
+		Design and 3D modelling of a smart mouthguard.
 	</LinkCard>
 	<LinkCard title="Patronus" href="/projects/patronus/">
 		3D modelling for an anti-drone system with Kongsberg Defence &amp; Aerospace.
