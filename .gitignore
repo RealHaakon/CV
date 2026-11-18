@@ -52,15 +52,16 @@ CV.tex
 !public/CV-nb.pdf
 
 # --- Raw asset sources (originals, not used by the site) ---
-CVpicture/
-CVPicture.jpg
-ClenchPicture/
-ESP32/
-MPU6050/
-Patronus/
-images/
-logos/
-bibliography/
+# Anchored to the repo root so they do not also match src/assets/.
+/CVpicture/
+/CVPicture.jpg
+/ClenchPicture/
+/ESP32/
+/MPU6050/
+/Patronus/
+/images/
+/logos/
+/bibliography/
 
 # --- Unused starter asset ---
 src/assets/houston.webp
