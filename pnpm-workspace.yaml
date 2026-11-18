@@ -1,3 +1,8 @@
+# Single-package workspace. The `packages` field is required by pnpm 9, which
+# Cloudflare's build image uses; newer pnpm versions allow omitting it.
+packages:
+  - '.'
+
 # Pre-approve build scripts for the packages C3 itself installs that need
 # them: `workerd` downloads the platform binary, `esbuild` and `sharp`
 # (via miniflare) download/build native bindings. Without these, pnpm 11+
